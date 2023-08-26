@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product with filter</title>
+</head>
+<style>
+    .filter {
+        padding: 20px;
+        display: flex;
+        column-gap: 20px;
+    }
+    .content{
+        padding: 40px;
+    }
+</style>
+
+<body>
+    <div class="content">
+        <div class="filter">
+            <div>
+                <label for="category">Category:</label>
+                <select id="category">
+                    <option value="All">All</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Books">Books</option>
+                    <option value="Home & Kitchen">Home & Kitchen</option>
+                    <option value="Toys & Games">Toys & Games</option>
+                </select>
+            </div>
+            <div>
+                <label for="available">Available:</label>
+                <select id="available">
+                    <option value="All">All</option>
+                    <option value="Available">In-stock</option>
+                    <option value="NotAvailable">Out-of-stock</option>
+                </select>
+    
+            </div>
+            <div>
+                <label for="price">price:</label>
+                <select id="price">
+                    <option value="All">All</option>
+                    <option value="20">less than 20</option>
+                    <option value="100">less than 100</option>
+                    <option value="100+">More than 100</option>
+                </select>
+            </div>
+        </div>
+        <div id="products"></div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
